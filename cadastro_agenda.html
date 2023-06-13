@@ -5,48 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
 </head>
 <body>
     <h1>CADASTRO DE AGENDA </h1>
     <form action="cadastro_agenda.php" 
           method="post">
-        <div>
+        <div class="form-group">
             <label for="nome">Nome da agenda</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" class="form-control" name="nome" id="nome">
         </div>
-        <div>
+        <div class="form-group">
             <label for="apelido">Apelido</label>
-            <input type="text" name="apelido" id="apelido">
+            <input type="text" class="form-control" name="apelido" id="apelido">
         </div>
         <div>
             <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco">
+            <input type="text" class="form-control" name="endereco" id="endereco">
         </div>
         <div>
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro">
+            <input type="text" class="form-control" name="bairro" id="bairro">
         </div>
         <div>
             <label for="cidade">Cidade</label>
-            <input type="text" name="cidade" id="cidade">
+            <input type="text" class="form-control" name="cidade" id="cidade">
         </div>
         <div>
             <label for="estado">Estado</label>
-            <input type="text" name="estado" id="estado">
+            <input type="text" class="form-control" name="estado" id="estado">
         </div>
         <div>
             <label for="email">email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" class="form-control" name="email" id="email">
+            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
         </div>
         <div>
             <label for="fone">Telefone</label>
-            <input type="text" name="fone" id="fone">
+            <input type="text" class="form-control" name="fone" id="fone">
         </div>
         <div>
             <label for="celular">Celular</label>
-            <input type="text" name="celular" id="celular">
+            <input type="text" class="form-control" name="celular" id="celular">
         </div>
-        <input type="submit" value="Salvar">
+        <input type="submit" class="btn btn-primary" value="Salvar">
     </form>
 </body>
 </html>
